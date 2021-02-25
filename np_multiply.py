@@ -28,7 +28,7 @@ def vector_product_np():
     vector2.fill(0.2)
     s = np.inner(vector1, vector2)
 
-def matrix_multiply_py():
+def matrix_multiply_np():
 	matrix1_rownum = 2000
 	matrix1_colnum = 50000
 	matrix1_size = matrix1_rownum * matrix1_colnum
@@ -72,4 +72,4 @@ def matrix_multiply_py():
 				vector3[row*matrix2_colnum+col] += vector1[row*matrix1_colnum+i] * vector2[i*matrix2_colnum+col]
 
 
-process(matrix_multiply_py)
+process(matrix_multiply_np)
